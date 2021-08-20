@@ -1,0 +1,114 @@
+﻿1
+00:00:04,600 --> 00:00:08,470
+so in this section we're going to create
+the Friends app which is a basic
+
+2
+00:00:08,470 --> 00:00:13,630
+contacts application that actually
+stores data in the database now the
+
+3
+00:00:13,630 --> 00:00:18,130
+friends app will allow contact details
+to be added edited and that will also
+
+4
+00:00:18,130 --> 00:00:24,450
+provide a way to search for individual
+contacts in the database and although
+
+5
+00:00:24,450 --> 00:00:28,840
+this is fairly simple app this section
+will introduce you to quite a few
+
+6
+00:00:28,840 --> 00:00:33,190
+important concepts and also methods as
+well we're really trying to sort of ramp
+
+7
+00:00:33,190 --> 00:00:37,540
+up your speed and experience going to
+start off with a discussion of databases
+
+8
+00:00:37,540 --> 00:00:40,960
+and we'll have a look at the databases
+that are included with android
+
+9
+00:00:40,960 --> 00:00:46,360
+specifically SQLITE now when
+using databases in an app
+
+10
+00:00:46,360 --> 00:00:51,610
+there are several different approaches
+that can actually be used and generally
+
+11
+00:00:51,610 --> 00:00:57,190
+you have to assume that database access
+will be quite slow so android provides
+
+12
+00:00:57,190 --> 00:01:02,440
+loader classes that can be used to
+prevent your app from appearing to be
+
+13
+00:01:02,440 --> 00:01:08,290
+or appearing to hang while data is fetched
+from the database and in addition to
+
+14
+00:01:08,290 --> 00:01:12,070
+this i'm also going to talk about cursors
+and will actually use cursors in the
+
+15
+00:01:12,070 --> 00:01:17,070
+Friends app we've seen adapters we've use
+those with the list view and recycler view
+
+16
+00:01:17,070 --> 00:01:21,460
+where they got their data from an
+arraylist so in this section we'll also
+
+17
+00:01:21,460 --> 00:01:26,140
+see how to provide data to an adapter
+but in this case the data is going to be
+
+18
+00:01:26,140 --> 00:01:31,140
+coming from a database and we'll also
+see how all of this will fit into the picture to
+
+19
+00:01:31,140 --> 00:01:37,320
+prevent blocking the UI thread while
+retrieving data from a database and this
+
+20
+00:01:37,320 --> 00:01:42,250
+is also good app to introduce the use of
+fragments which are a good way to create
+
+21
+00:01:42,250 --> 00:01:47,890
+more versatile user interfaces and they also allow us to make better use of the
+
+22
+00:01:47,890 --> 00:01:52,450
+bigger screen on a tablet for example
+while still providing the full features
+
+23
+00:01:52,450 --> 00:01:56,800
+on a smaller phone screen so a lot to
+cover in this section let's make a start
+

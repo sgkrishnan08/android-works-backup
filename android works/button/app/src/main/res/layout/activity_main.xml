@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/additemhome"
+        android:layout_width="409dp"
+        android:layout_height="46dp"
+        android:text="@string/homeitems"
+        app:layout_constraintBottom_toTopOf="@+id/addcompanyhome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/addentryhome"
+        android:layout_width="409dp"
+        android:layout_height="45dp"
+        android:text="@string/homeentry"
+        app:layout_constraintBottom_toTopOf="@+id/additemhome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/addcustomerhome"
+        android:layout_width="409dp"
+        android:layout_height="46dp"
+        android:text="@string/addcustomer"
+        app:layout_constraintBottom_toTopOf="@+id/addentryhome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/addcompanyhome"
+        android:layout_width="409dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="72dp"
+        android:text="@string/addcompnay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/print"
+        android:layout_width="409dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="24dp"
+        android:text="print"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
